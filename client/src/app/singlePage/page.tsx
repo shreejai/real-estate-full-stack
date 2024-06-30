@@ -1,8 +1,5 @@
 'use client'
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
 import Slider from '@/components/slider/Slider'
-import { Map } from 'leaflet'
 import Image from 'next/image'
 import React, { useMemo } from 'react'
 import './singlePage.css'

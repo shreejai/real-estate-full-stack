@@ -1,7 +1,5 @@
 'use client'
 import Filter from '@/components/Filter'
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
 import PropertyCard from '@/components/PropertyCard'
 import dynamic from 'next/dynamic'
 import { useEffect, useMemo, useState } from 'react'
