@@ -1,0 +1,93 @@
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.buttons button{
+  display: flex;
+  border: 1px solid #fece51;
+  padding: 20px;
+  align-items: center;
+  gap: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons button img{
+  width: 16px;
+  height: 16px;
+}
+
+.details{
+  flex: 3;
+  height: 100%;
+  overflow: scroll;
+}
+
+.features{
+  flex: 2;
+  background-color: #fcf5f3;
+  height: 100%;
+  overflow: scroll;
+}
+.features img{
+  width: 24px;
+  height: 24px;
+}
+.features .listVertical{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.features .listHorizontal{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.features .title{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.features .wrapper{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.features .wrapper .feature{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.features .wrapper .feature .featureText p{
+  font-size: 14px;
+}
+.features .wrapper .feature .featureText span{
+  font-weight: bold;
+}
+.features .wrapper .feature img{
+  background-color: rgba(254, 205, 81, 0.209);
+}
+
+.mapContainer{
+  width: 100%;
+  height: 200px;
+}
+
+.sizes{
+  display: flex;
+  justify-content: space-between;
+}
+.sizes .size{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}

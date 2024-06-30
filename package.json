@@ -1,0 +1,11 @@
+{
+  "name": "real-estate-full-stack",
+  "version": "1.0.0",
+  "description": "Full Stack Real Estate App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shreejai Raj",
+  "license": "ISC"
+}

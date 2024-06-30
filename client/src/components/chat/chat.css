@@ -1,0 +1,39 @@
+.chat{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.messages{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+}
+
+.message{
+  background: #fff;
+  padding: 20px;
+}
+
+.message span{
+  font-weight: bold;
+}
+
+.chatBox{
+  flex:1;
+}
+
+.chatMessage{
+  width: 50%;
+}
+.chatMessage.own{
+  align-self: flex-end;
+  text-align: right;
+}
+.chatMessage span{
+  background-color: #f7c14b85;
+  font-size: 12px;
+  padding: 2px;
+  border-radius: 5px;
+}

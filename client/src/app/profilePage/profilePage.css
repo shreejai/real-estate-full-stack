@@ -1,0 +1,10 @@
+.title h1, .title h1 {
+  font-weight: 300;
+}
+
+.title button {
+  background: orange;
+  padding: .5rem 1rem;
+  font-size: small;
+  cursor: pointer;
+}
