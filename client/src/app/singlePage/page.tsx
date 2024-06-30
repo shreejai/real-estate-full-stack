@@ -42,7 +42,6 @@ const SinglePage = () => {
 
   return (
     <>
-    <Navbar/>
     <div className='singlePage grid grid-cols-1 lg:grid-cols-2 px-8 py-4'>
       <div className="details mt-10 md:mt-0 md:p-10">
         <div className="wrapper">
@@ -151,7 +150,6 @@ const SinglePage = () => {
         </div>
       </div>
     </div>
-    <Footer/>
     </>
   )
 }
