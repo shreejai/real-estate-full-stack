@@ -1,0 +1,41 @@
+.registerPage{
+  height: 100%;
+  display: flex;
+  padding: 40px;
+}
+.formContainer{
+  flex: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  font-size: 14px;
+  color: gray;
+  border-bottom: 1px solid gray;
+  width: max-content;
+}
+input{
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+button{
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+}
+.imageContainer{
+  flex: 2;
+  background-color: #fcf5f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageContainer image{
+  width: 100%;
+}
