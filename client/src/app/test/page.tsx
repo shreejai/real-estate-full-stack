@@ -1,7 +1,5 @@
 'use client'
 import Filter from '@/components/Filter'
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
 import PropertyCard from '@/components/PropertyCard'
 import dynamic from 'next/dynamic'
 import { useEffect, useMemo, useState } from 'react'
@@ -72,7 +70,6 @@ const Test: React.FC = () => {
 
   return (
     <>
-      <Navbar />
       <div>&nbsp;</div>
       <div className='listPage grid grid-cols-1 md:grid-cols-2 gap-4'>
         <div className='listContainer'>
@@ -101,7 +98,6 @@ const Test: React.FC = () => {
         <span className='py-2 px-4'>Page {currentPage} of {totalPages}</span>
         <button onClick={handleNextPage} disabled={currentPage === totalPages} className={` px-4 py-2 text-white rounded-lg ${currentPage === totalPages ? 'bg-slate-500' : 'bg-orange-400'}`}>Next</button>
       </div>
-      <Footer />
     </>
   );
 }

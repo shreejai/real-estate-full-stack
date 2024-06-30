@@ -1,6 +1,4 @@
-import Footer from '@/components/Footer'
 import List from '@/components/List/List'
-import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
 import '@/app/profilePage/profilePage.css';
@@ -9,7 +7,6 @@ import Chat from '@/components/chat/Chat'
 const page = () => {
   return (
     <div>
-      <Navbar/>
       <div className='profilePage grid grid-cols-1 md:grid-cols-2'>
         <div className="details p-4 pb-10">
           <div className="wrapper flex flex-col gap-8">
@@ -39,7 +36,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Footer/>
     </div>
   )
 }

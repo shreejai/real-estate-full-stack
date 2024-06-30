@@ -1,8 +1,5 @@
 'use client'
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
 import Slider from '@/components/slider/Slider'
-import { Map } from 'leaflet'
 import Image from 'next/image'
 import React, { useMemo } from 'react'
 import './singlePage.css'
@@ -42,7 +39,6 @@ const SinglePage = () => {
 
   return (
     <>
-    <Navbar/>
     <div className='singlePage grid grid-cols-1 lg:grid-cols-2 px-8 py-4'>
       <div className="details mt-10 md:mt-0 md:p-10">
         <div className="wrapper">
@@ -151,7 +147,6 @@ const SinglePage = () => {
         </div>
       </div>
     </div>
-    <Footer/>
     </>
   )
 }
