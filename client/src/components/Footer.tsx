@@ -125,6 +125,16 @@ const Footer = () => {
                     Profile
                   </a>
                 </li>
+                <li>
+                  <a href="/registerPage" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    Register
+                  </a>
+                </li>
+                <li>
+                  <a href="/login" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    Login
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
