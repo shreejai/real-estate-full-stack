@@ -16,10 +16,15 @@ app.use(cookieParser());
 
 app.use("/api/test", (req, res) => {
   res.send('It works!');
-})
+});
+
 app.use('/api/posts/', postRoute);
 app.use('/api/auth/', authRoute);
 
+app.use('/api/auth/login', (req, res) => {
+  res.send('login works!')
+})
+
 app.listen(PORT, () => {
-  console.log(`Server is running on PORT ${PORT}`);
+  console.log(`Yay! Server is running on PORT ${PORT}`);
 })

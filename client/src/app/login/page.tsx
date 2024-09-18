@@ -48,8 +48,8 @@ const Page = () => {
     
   }
   return (
-    <div className='login'>
-      <div className="formContainer">
+    <main className='login h-[100dvh]'>
+      <div className="formContainer flex !h-[100dvh]">
         <form onSubmit={handleSubmit}>
           <h1>Welcome back</h1>
           <input 
@@ -74,7 +74,7 @@ const Page = () => {
       <div className="imgContainer">
         <img src="/bg.png" alt="login" />
       </div>
-    </div>
+    </main>
   )
 }
 
