@@ -50,7 +50,7 @@ const Page = () => {
   }
   return (
     <>
-      <div className='registerPage'>
+      <main className='registerPage'>
         <div className="formContainer">
           <form onSubmit={handleSubmit} className='flex flex-col gap-5'>
             <h1>Create an account</h1>
@@ -68,7 +68,7 @@ const Page = () => {
           {/* <Image src="/bg.png" alt="bg image" width={100} height={100}/> */}
           <img src="/bg.png" alt="bg image"/>
         </div>
-      </div>
+      </main>
     </>
   )
 }

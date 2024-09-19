@@ -6,8 +6,7 @@ export const register = async ( req, res ) => {
   const { username, email, password, phone, usertype } = req.body;
 
   try{
-
-
+ 
     // HASH THE PASSWORD
 
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -62,7 +61,7 @@ export const login = async ( req, res ) => {
 
   res.cookie("token", token, {
     httpOnly: true,
-    //secure: true, // enable in prod
+    //secure: true, // enable in prod for https
     maxAge: age,
   }).status(200).json({message: "Login Successful"})
   }catch(err){
