@@ -22,7 +22,8 @@ const Page = () => {
     console.log(username, password);
 
     try {
-      const res = await apiRequest.post("/auth/login",{
+      // const res = await apiRequest.post("/auth/login",{
+      const res = await axios.post("http://localhost:8800/api/auth/login",{ 
         username,
         password,
       },{
@@ -31,9 +32,10 @@ const Page = () => {
         },
         withCredentials: true
       });
-      console.log(res.data);
-      // Navigate on successful registration
-      // router.push('/login');
+      localStorage.setItem("user", JSON.stringify(res.data));
+      router.push("/");
+      //console.log(res.data);
+
     } catch (err) {
       if(axios.isAxiosError(err)){
         console.log('Axios error:', err); 

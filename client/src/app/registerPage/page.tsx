@@ -8,11 +8,15 @@ import axios from 'axios';
 
 const Page = () => {
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+
+    setIsLoading(true);
     const formData = new FormData(e.target);
+
     const username = formData.get("username");
     const email = formData.get("email");
     const phone = formData.get("phone");
@@ -45,6 +49,8 @@ const Page = () => {
         console.log('Unexpected error', err);
         setError('An unexpected error occurred.')
       }
+    } finally {
+      setIsLoading(false);
     }
     
   }
@@ -59,7 +65,7 @@ const Page = () => {
             <input name='phone' type="text" placeholder='Phone'/>
             <input name='usertype' type="text" placeholder='User Type'/>
             <input name='password' type="password" placeholder='Password'/>
-            <button>Register</button>
+            <button disabled={isLoading}>Register</button>
             {error && <span className='text-red-500'>{error}</span>}
             <Link href="/login">Do you have an account?</Link>
           </form>
