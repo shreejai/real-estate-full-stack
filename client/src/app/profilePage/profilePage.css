@@ -8,3 +8,13 @@
   font-size: small;
   cursor: pointer;
 }
+
+.info button {
+  width: 100px;
+  background-color: teal;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
